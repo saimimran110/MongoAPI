@@ -11,9 +11,7 @@ const app = express();
 
 // Middleware
 
-app.use(cors({
-  origin: 'http://localhost:5173', // allow frontend dev server
-})); // Enable CORS for all origins
+app.use(cors()); // Enable CORS for all origins
 app.use(bodyParser.json());
 
 // Routes
